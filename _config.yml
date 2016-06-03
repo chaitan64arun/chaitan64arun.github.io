@@ -1,0 +1,12 @@
+# Site settings
+title: Arun Chaitanya's Website 
+email: chaitan64arun@gmail.com
+description: "A website to share thoughts on technology"
+baseurl: ""
+url: "chaitan64arun.github.io"
+twitter_username: chaitan64arun
+github_username:  chaitan64arun
+
+# Build settings
+markdown: kramdown
+permalink: pretty
