@@ -1,6 +1,6 @@
 # As the name says this is the configuration file
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 permalink: /:title.html
 paginate: 5
