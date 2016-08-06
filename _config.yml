@@ -1,12 +1,34 @@
-# Site settings
-title: Arun Chaitanya's Website 
-email: chaitan64arun@gmail.com
-description: "A website to share thoughts on technology"
-baseurl: ""
-url: "chaitan64arun.github.io"
-twitter_username: chaitan64arun
-github_username:  chaitan64arun
+# As the name says this is the configuration file
 
-# Build settings
+highlighter: pygments
 markdown: kramdown
-permalink: pretty
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# Personal details
+url: http://chaitan64arun.github.io/
+baseurl: /
+title: Arun Chaitanya
+author: Arun Chaitanya Miriappalli
+description: Personal blog
+avatar: arun.jpg
+email: arunmchaitanya@outlook.com
+github: chaitan64arun
+twitter: chaitan64arun
+linkedin: arunchaitanyam
+stackoverflow: users/3445161/chaitan64arun
+#Comment out if you don't want disqus
+disqus: arunchaitanya
+#google_analytics: UA-69391421-1
+tel: +81 80 8845 0040
+tel_full: tel:+818088450040
+city: Tokyo
+country: Japan
+
+
+# needed for travis-ci build
+exclude: [vendor]

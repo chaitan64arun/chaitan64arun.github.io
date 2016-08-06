@@ -1,23 +1,17 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
-
-    <h1> This site is still under construction!</h1>
-    <h2>Posts</h2>
-
-  <ul class="posts">
-   
-      
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section id="about">
+	<div class="container">
+	  <div class="avatar">
+		<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image" height="200px">
+	  </div>
+	  <h3>I'm <strong>{{ site.author }}</strong>, a Software Engineer.</h3>
+	  <h3>I am technology enthusiast and a movie buff.</h3>
+	  <h3>I am currently working on making highly available data layer for Enterprise Applications at Works Applications.</h3>
+	  <h3>For more check out my academic &amp; professional <a href="{{site.baseurl}}resume.html">Resume</a>.</h3>
+	  <h3>Contact me at <a href="http://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a> or by <a href="mailto:{{ site.email }}">email</a>.</h3>
+	  {% include social.html %}
+	</div>
+</section>
